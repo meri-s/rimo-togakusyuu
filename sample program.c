@@ -26,7 +26,7 @@ void main(void) {
 
 		/* 入力した値が 001 ～ 013 の場合 */
 		if ((atoi(num) <= 13) && (atoi(num) >= 1)) {
-			h = atoi(num);							/* h に入力した値を数値で代入 */
+			h = atoi(num);							/* 入力した値を数値で h に代入 */
 			while (h != 0) {						/* h が0でない時ループ */
 				fseek(fp, 4, SEEK_CUR);				/* ファイルの読み込み位置を4byteずらす */
 				fgets(&(str[0]), sizeof(str), fp);	/* ファイル1行分読み込み */
@@ -36,7 +36,7 @@ void main(void) {
 
 		/* 入力した値が 015 ～ 020 の場合 */
 		if ((atoi(num) <= 20) && (atoi(num) >= 15)) {
-			h = atoi(num);							/* h に入力した値を数値で代入 */
+			h = atoi(num);							/* 入力した値を数値で h に代入 */
 			while (h != 1) {						/* h が0でない時ループ */
 				fseek(fp, 4, SEEK_CUR);				/* ファイルの読み込み位置を4byteずらす */
 				fgets(&(str[0]), sizeof(str), fp);	/* ファイル1行分読み込み */

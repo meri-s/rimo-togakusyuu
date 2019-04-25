@@ -19,6 +19,6 @@ if (flag == 0) {
 	printf("[検索結果]:該当データなし\n");
 }
 /* フラグ：ONの場合 */
-else {
+else if (flag == 1) {
 	flag = 0;	/* フラグ：OFF */
 }

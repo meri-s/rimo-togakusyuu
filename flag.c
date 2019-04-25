@@ -1,6 +1,6 @@
 char num[5] = { 0 };			/* 入力した値を格納する配列 */
 char str[1000][261] = { 0 };	/* ファイルのデータを格納する二次元配列 */
-char flag = 0;					/* フラグ ON:1 OFF:0 */
+char flag = 0;					/* フラグ [ON:1/OFF:0] */
 
 /* 1000回ループ */
 for (short count = 0;count < 1000;count++) {

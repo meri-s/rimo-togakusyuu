@@ -9,7 +9,7 @@
 #define SEPARATOR_SIZE		(1)				/* セパレータ部のサイズ(byte)					*/
 #define DATA_SIZE			(256)			/* データ部のサイズ(byte)						*/
 #define DATA_COL_MAX		(SEARCH_KEY_SIZE + SEPARATOR_SIZE + DATA_SIZE + 1)
-											/* ファイルデータのMAX列数(NULL終端含む)		*/
+											/* ファイルデータのMAX桁数(NULL終端含む)		*/
 #define DSP_POS				(SEARCH_KEY_SIZE + SEPARATOR_SIZE)
 											/* 表示開始位置									*/
 #define FLAG_ON				(1)				/* フラグ値(ON)									*/
@@ -54,10 +54,10 @@ void main(void) {
 
 	/* 永久ループ */
 	while (1) {
-		cFoundFlag = FLAG_OFF;	/* フラグ初期化	*/
+		cFoundFlag = FLAG_OFF;			/* フラグ初期化	*/
 
 		printf("%s", &(sPrintMessage[STORAGE_ID_01][0]));	/* 文言ID 01の出力	*/
-		gets(&(sInputBuf[0]));								/* 検索キーを入力	*/
+		gets(&(sInputBuf[0]));					/* 検索キーを入力	*/
 
 		/* "EXIT"と入力するとループ終了 */
 		if (strcmp(&(sInputBuf[0]), "EXIT") == 0) {		/* 入力した値と"EXIT"を比べ、等しい時 0 を返し、==で判定 */

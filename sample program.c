@@ -18,10 +18,10 @@
 #define OPEN_MODE			("r")			/* ファイルオープンモード						*/
 #define MESSAGE_ID_MAX		(5)				/* 文言IDのMAX値								*/
 #define MESSAGE_ID_SIZE		(64)			/* 文言IDのサイズ(byte)							*/	
-#define STORAGE_ID_01		(0)				/* 文言ID 01を格納している2次元配列の行数		*/
-#define STORAGE_ID_02		(1)				/* 文言ID 02を格納している2次元配列の行数		*/
-#define STORAGE_ID_03		(2)				/* 文言ID 03を格納している2次元配列の行数		*/
-#define STORAGE_ID_04		(3)				/* 文言ID 04を格納している2次元配列の行数		*/
+#define STORAGE_ID_01		(0)				/* 文言ID 01が格納されている配列番号			*/
+#define STORAGE_ID_02		(1)				/* 文言ID 02が格納されている配列番号			*/
+#define STORAGE_ID_03		(2)				/* 文言ID 03が格納されている配列番号			*/
+#define STORAGE_ID_04		(3)				/* 文言ID 04が格納されている配列番号			*/
 
 static char sPrintMessage[MESSAGE_ID_MAX][MESSAGE_ID_SIZE] = {
 	{ "3桁の数字を入力して下さい[終了/EXIT]:" },	/* 文言ID 01	*/
